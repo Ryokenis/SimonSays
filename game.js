@@ -84,6 +84,7 @@ var checkAnswer = (currentLevel) => {
   }
 };
 
+//Resets the game
 var startOver = () => {
   level = 0;
   gamePattern = [];
@@ -92,6 +93,7 @@ var startOver = () => {
   i = 0;
 };
 
+//Loops through and plays the gamePatter array
 function simonLoop() {
   setTimeout(function () {
     playSound(gamePattern[i]);
