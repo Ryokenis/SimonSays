@@ -62,7 +62,6 @@ var checkAnswer = (currentLevel) => {
     gamePattern[userClickedPattern.length - 1] ===
     userClickedPattern[userClickedPattern.length - 1]
   ) {
-    console.log('sucess');
     if (gamePattern.length === userClickedPattern.length) {
       //Calling the nextSequence function again
       setTimeout(function () {
@@ -80,7 +79,6 @@ var checkAnswer = (currentLevel) => {
     }, 200);
     $('h1').text('Game Over, Press Any Key to Restart');
     startOver();
-    console.log('fail');
   }
 };
 
