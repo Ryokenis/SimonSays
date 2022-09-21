@@ -45,7 +45,7 @@ $('.btn').click(function (e) {
 });
 
 //Button to commence the game
-$(document).keydown(function () {
+$(document).click(function () {
   if (started) {
     $('h1').text('Level 0');
     nextSequence();
@@ -62,7 +62,6 @@ var checkAnswer = (currentLevel) => {
     gamePattern[userClickedPattern.length - 1] ===
     userClickedPattern[userClickedPattern.length - 1]
   ) {
-    console.log('sucess');
     if (gamePattern.length === userClickedPattern.length) {
       //Calling the nextSequence function again
       setTimeout(function () {
@@ -80,7 +79,6 @@ var checkAnswer = (currentLevel) => {
     }, 200);
     $('h1').text('Game Over, Press Any Key to Restart');
     startOver();
-    console.log('fail');
   }
 };
 
