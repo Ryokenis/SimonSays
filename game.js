@@ -77,8 +77,10 @@ var checkAnswer = (currentLevel) => {
     setTimeout(function () {
       $('body').removeClass('game-over');
     }, 200);
-    $('h1').text('Game Over, Press Any Key to Restart');
-    startOver();
+    $('h1').text('Game Over, Click Anywhere to Restart');
+    setTimeout(function () {
+      startOver();
+    }, 100);
   }
 };
 
